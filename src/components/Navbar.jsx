@@ -38,7 +38,7 @@ const Navbar = () => {
           to='/'
           className='flex items-center gap-2'
           onClick={() => {
-            setActive("");
+            setActive("/personal-website/");
             window.scrollTo(0, 0);
           }}
         >
@@ -57,7 +57,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`personal-website/#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -87,7 +87,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`personal-website/#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>
