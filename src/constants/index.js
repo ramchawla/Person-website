@@ -31,14 +31,29 @@ export const navLinks = [
   {
     id: "about",
     title: "About",
+    href: "#about",
   },
   {
     id: "work",
     title: "Work",
+    href: "#work",
   },
   {
     id: "contact",
     title: "Contact",
+    href: "#contact",
+  },
+  {
+    id: "linkedin",
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/ramyachawla/",
+    target: "_blank",
+  },
+  {
+    id: "resume",
+    title: "Resume",
+    href: "/personal-website/Ram_chawla_Resume.pdf",
+    target: "_blank",
   },
 ];
 

@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
-          to='/personal-website'
+          to='/personal-website/'
           className='flex items-center gap-2'
           onClick={() => {
             setActive("/personal-website/");
@@ -57,7 +57,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={nav.href} target={nav.target}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -83,11 +83,11 @@ const Navbar = () => {
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
-                    setToggle(!toggle);
+                    setToggle(!toggle); 
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={nav.href} target={nav.target}>{nav.title}</a>
                 </li>
               ))}
             </ul>
